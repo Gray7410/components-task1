@@ -28,6 +28,12 @@ const Counter = (props) => {
       <button className="btn btn-primary btn-sm m-2" onClick={handleDecrement}>
         -
       </button>
+      <button
+        className="btn btn-danger btn-sm m-2"
+        onClick={() => props.onDelete(props.id)}
+      >
+        Удалить
+      </button>
     </div>
   );
 };
